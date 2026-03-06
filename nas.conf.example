@@ -1,0 +1,21 @@
+# NAS 配置模板
+# 复制此文件为 nas.conf 并填入真实值
+# 权限设置：chmod 600 nas.conf
+
+# NAS 地址（IP 或域名）
+NAS_HOST="192.168.10.6"
+
+# NAS 端口（SSH 默认 22，FTP 默认 21）
+NAS_PORT="22"
+
+# NAS 用户名
+NAS_USER="openclaw"
+
+# NAS 密码
+NAS_PASS="YOUR_NAS_PASSWORD_HERE"
+
+# NAS 备份目录
+NAS_DIR="/openclaw"
+
+# 传输方式（ssh/ftp）
+TRANSFER_METHOD="ssh"
