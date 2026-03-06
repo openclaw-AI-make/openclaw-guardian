@@ -1,0 +1,11 @@
+# Telegram 通知配置模板
+# 复制此文件为 notify.conf 并填入真实值
+# 权限设置：chmod 600 notify.conf
+
+# Telegram Bot Token
+# 获取方式：https://t.me/BotFather
+BOT_TOKEN="YOUR_BOT_TOKEN_HERE"
+
+# Telegram Chat ID
+# 获取方式：https://t.me/userinfobot
+CHAT_ID="YOUR_CHAT_ID_HERE"
