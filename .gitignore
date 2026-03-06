@@ -1,0 +1,50 @@
+# 敏感配置文件
+notify.conf
+nas.conf
+*.conf
+!*.conf.example
+
+# 凭证目录
+credentials/
+.env
+.env.local
+.env.*.local
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.bak
+*.cache
+*.swp
+*~
+
+# 备份文件
+*.tar.gz
+*.zip
+backups/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.orig
+
+# 依赖
+node_modules/
+vendor/
+
+# 构建产物
+dist/
+build/
+coverage/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# 测试
+test-results/
+*.test.log
