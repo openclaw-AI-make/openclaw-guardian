@@ -1,0 +1,56 @@
+{
+  "name": "@openclaw-AI-make/guardian",
+  "version": "1.0.0",
+  "description": "OpenClaw Guardian - 自动健康检查、配置回滚、服务恢复",
+  "main": "scripts/watchdog.sh",
+  "scripts": {
+    "test": "bash scripts/test-all.sh",
+    "backup": "bash scripts/full-backup.sh",
+    "restore": "bash scripts/restore.sh",
+    "watchdog": "bash scripts/watchdog.sh",
+    "lint": "shellcheck scripts/*.sh"
+  },
+  "keywords": [
+    "openclaw",
+    "guardian",
+    "backup",
+    "recovery",
+    "automation",
+    "ai-assistant"
+  ],
+  "author": "瓶子 (20721)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw-AI-make/openclaw-guardian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openclaw-AI-make/openclaw-guardian/issues"
+  },
+  "homepage": "https://github.com/openclaw-AI-make/openclaw-guardian#readme",
+  "bin": {
+    "oc-backup": "scripts/full-backup.sh",
+    "oc-restore": "scripts/restore.sh",
+    "oc-watchdog": "scripts/watchdog.sh",
+    "oc-config-backup": "scripts/config-backup.sh",
+    "oc-confirm": "scripts/confirm-config.sh",
+    "oc-rollback": "scripts/config-rollback.sh",
+    "oc-cache-clean": "scripts/cleanup-cache.sh",
+    "oc-list": "scripts/list-backups.sh",
+    "oc-verify": "scripts/verify-backup.sh"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "os": [
+    "linux"
+  ],
+  "files": [
+    "scripts/",
+    "README.md",
+    "SKILL.md",
+    "LICENSE",
+    "notify.conf.example",
+    "nas.conf.example"
+  ]
+}
